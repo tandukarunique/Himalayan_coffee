@@ -1,0 +1,52 @@
+.homepage {
+  text-align: center;
+}
+.homepage p {
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(128, 124, 124);
+  width: 100%;
+  position: relative;
+}
+.homepage img {
+  max-width: 1750px;
+}
+.p-text {
+  text-align: center;
+  padding: 30px 30px;
+}
+.learn-button {
+  height: 80px;
+  width: 190px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column; /* Stack the image and content vertically on smaller screens */
+    text-align: center;
+  }
+  .banner {
+    text-align: left;
+    padding: 70px 50px;
+  }
+  .banner img {
+    width: 900px;
+  }
+}
+.banner {
+  text-align: left;
+  padding: 70px 50px;
+}
+.banner img {
+  width: 800px;
+}
+
+.content {
+  text-align: left;
+  align-items: right;
+  justify-content: flex-start;
+  margin-left: auto;
+}
