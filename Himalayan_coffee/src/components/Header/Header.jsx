@@ -4,9 +4,9 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="container">
-      <div className="marquee">
+      {/* <div className="marquee">
         <span>Himalayan Java</span>
-      </div>
+      </div> */}
     </div>
   );
 };

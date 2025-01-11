@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif; /* Default font */
+}
+
 .homepage {
   text-align: center;
 }
@@ -18,7 +24,7 @@
 }
 .learn-button {
   height: 80px;
-  width: 190px;
+  width: 200px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
@@ -42,11 +48,62 @@
 }
 .banner img {
   width: 800px;
+  position: absolute;
 }
 
 .content {
   text-align: left;
-  align-items: right;
-  justify-content: flex-start;
   margin-left: auto;
+  width: 100vh;
+  position: relative;
+  margin-top: 30px;
+}
+.content p {
+  font-size: 35px;
+}
+.content h1 {
+  font-size: 65px;
+  width: 80vh;
+}
+.banner2 {
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
+}
+.text-part {
+  margin-top: 20vh;
+  position: absolute;
+}
+.text-part .buy {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 10px;
+}
+.text-part .lighter {
+  max-width: 22%;
+  font-size: 22px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  color: rgb(141, 137, 137);
+}
+.text-part p {
+  font-size: 23px;
+  max-width: 30%;
+  color: rgb(59, 59, 59);
+  font-family: "Outfit", sans-serif;
+
+  font-weight: 200;
+  padding: 15px;
+}
+.banner2 img {
+  position: relative;
+  height: 650px;
+  width: 800px;
+  padding: 30px 10px 0px 80px;
+}
+.right-part img {
+  height: 250px;
+  width: 240px;
+
 }
