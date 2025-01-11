@@ -1,5 +1,6 @@
 import React from "react";
 import "./Homepage.css";
+import { HiMiniArrowSmallRight } from "react-icons/hi2";
 import HomepageImage from "../../assets/HomepageImage.jpg";
 import banner1 from "../../assets/banner_files/Homepage_files/banner1.jpg";
 import banner2 from "../../assets/banner_files/Homepage_files/banner2.png";
@@ -48,7 +49,29 @@ const Homepage = () => {
             <img src={banner2} />
           </div>
           <div className="right-part">
-            <img  src={banner3} />
+            <div
+              className="points"
+              style={{
+                fontSize: "40px",
+                position: "absolute",
+                display: "grid",
+                marginLeft: "49vh",
+                marginRight: "0px",
+                marginTop: "-29.5vh",
+              }}
+            >
+              <HiMiniArrowSmallRight />
+              <HiMiniArrowSmallRight />
+            </div>
+
+            <img src={banner3} />
+
+            <p>Why java coffee?</p>
+
+            <p className="thirdpartp">
+              Himalayan Java offers its customers the best-tasting coffee
+              beverages in the country.
+            </p>
           </div>
         </div>
       </div>

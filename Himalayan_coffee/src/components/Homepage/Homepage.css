@@ -101,9 +101,33 @@ body {
   height: 650px;
   width: 800px;
   padding: 30px 10px 0px 80px;
+  filter: drop-shadow(10px 10px 15px rgba(108, 106, 106, 0.5));
+}
+.right-part {
+  text-align: center;
 }
 .right-part img {
   height: 250px;
   width: 240px;
-
+  position: relative;
+  display: grid;
+  margin-left: auto;
+  top: -70vh;
+  margin-right: 17vh;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+}
+.right-part p {
+  height: 250px;
+  width: 240px;
+  position: relative;
+  display: grid;
+  margin-left: auto;
+  top: -85vh;
+  margin-right: 17vh;
+  font-size: 25px;
+}
+.thirdpartp{
+  text-align: left;
+  position: relative;
+  margin-top: -8%;
 }
