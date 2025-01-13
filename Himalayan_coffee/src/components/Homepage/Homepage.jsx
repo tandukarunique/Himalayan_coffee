@@ -12,8 +12,10 @@ import coffee4 from "../../assets/banner_files/Homepage_files/coffee4.png";
 import equipment_bg from "../../assets/banner_files/Homepage_files/equipment_bg.png";
 import { IoLogoXbox } from "react-icons/io";
 import barsita_training from "../../assets/banner_files/Homepage_files/barista_training.jpg";
-
 import bakery_training from "../../assets/banner_files/Homepage_files/bakery_training.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import TestimonialSlider from "../Slider/Slider";
 
 const Homepage = () => {
   return (
@@ -231,11 +233,40 @@ const Homepage = () => {
         <div className="training_workshop">
           <p>TRAINING & WORKSHOP</p>
           <h1>Bakery Training</h1>
-          <p>
-            We train students to help them understand the fundamentals of baking
-            and running a bakery.
+          <p style={{ top: "30px" }}>
+            We train students to help them understand the <br />
+            fundamentals of baking and running a bakery.
           </p>
+          <button
+            className="learn-button"
+            style={{ height: "75px", marginTop: "3vh" }}
+          >
+            Learn More
+          </button>
+          <p
+            style={{
+              position: "relative",
+              marginLeft: "11vh",
+              fontWeight: "600",
+            }}
+          >
+            Bakery School Brochure
+          </p>
+
+          <IoLogoXbox
+            style={{
+              display: "flex",
+              position: "absolute",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginLeft: "6vh", // Adjust as needed
+              marginTop: "-7.5vh", // Adjust as needed
+              width: "40px",
+              fontSize: "20px",
+            }}
+          />
         </div>
+        <TestimonialSlider />
       </div>
     </div>
   );
