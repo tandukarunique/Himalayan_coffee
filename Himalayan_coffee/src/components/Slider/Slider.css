@@ -8,9 +8,9 @@
 
 .testimonial-card {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 0 20px;
+  border-radius: 25px;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  margin: 0vh 20vh;
   overflow: hidden;
 }
 .slick-center .testimonial-card {
@@ -19,19 +19,20 @@
 }
 
 .testimonial-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
+  cursor: pointer;
 }
 
 .testimonial-header h3 {
   color: #2c1e55; /* Adjust to your theme color */
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .testimonial-header p {
   color: #a9a9a9;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-content: left;
   position: relative;
 }
@@ -42,6 +43,7 @@
   flex-direction: row;
   width: 100px;
   float: right;
+  margin-top: -7vh;
 }
 
 .star-icon {
@@ -50,7 +52,6 @@
 }
 
 .testimonial-text {
-  font-size: 16px;
   color: #4a4a4a;
-  line-height: 1.6;
+  line-height: 1.5;
 }

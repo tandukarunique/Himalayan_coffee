@@ -12,7 +12,7 @@ const TestimonialSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true, // Enables centering the middle slide
-    centerPadding: "80vh", // Remove padding around the center slide
+    centerPadding: "30vh", // Remove padding around the center slide
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -38,13 +38,13 @@ const TestimonialSlider = () => {
       text: "Lovely place to hangout with friends and family. They serve tasty food. The coffee is also great here. A must-visit place if you are in Nepal.",
     },
     {
-      name: "amyholland212",
+      name: "Amyholland212",
       source: "Trip Advisor",
       rating: 5,
       text: "Best coffee in Nepal! Definitely worth a visit if you are craving a real fresh bean coffee. The barista training is spot-on with high standards.",
     },
     {
-      name: "john_doe",
+      name: "John_doe",
       source: "Google Reviews",
       rating: 4,
       text: "A fantastic place with a cozy ambiance. Coffee is top-notch and desserts are a must-try! Service can be improved slightly.",
@@ -56,7 +56,14 @@ const TestimonialSlider = () => {
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial-card">
-            <div className="testimonial-header">
+            <div
+              className="testimonial-header"
+              style={{
+                alignItems: "left",
+                position: "relative",
+                marginLeft: "-22vh",
+              }}
+            >
               <h3>{testimonial.name}</h3>
               <p>{testimonial.source}</p>
             </div>
@@ -65,7 +72,12 @@ const TestimonialSlider = () => {
                 <AiFillStar key={i} className="star-icon" />
               ))}
             </div>
-            <p className="testimonial-text">{testimonial.text}</p>
+            <p
+              className="testimonial-text"
+              style={{ fontSize: "25px", padding: "30px 30px" }}
+            >
+              {testimonial.text}
+            </p>
           </div>
         ))}
       </Slider>
