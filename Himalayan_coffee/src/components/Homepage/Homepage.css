@@ -251,3 +251,20 @@ body {
   font-style: normal;
   color: rgb(70, 69, 69);
 }
+.location-container {
+  position: absolute;
+  background: white;
+  width: 100%;
+}
+.locations {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.locations img {
+  height: 190px;
+  width: 260px;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}

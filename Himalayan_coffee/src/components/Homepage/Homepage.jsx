@@ -16,8 +16,30 @@ import bakery_training from "../../assets/banner_files/Homepage_files/bakery_tra
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialSlider from "../Slider/Slider";
+import location_bhaktapur from "../../assets/banner_files/Homepage_files/location_bhaktapur.jpeg";
+import location_gyanmandala from "../../assets/banner_files/Homepage_files/location_gyanmandala.jpg";
+import location_nepalartcouncil from "../../assets/banner_files/Homepage_files/location_nepalartcouncil.jpg";
+import location_ratnachowk from "../../assets/banner_files/Homepage_files/location_ratnachowk.jpg";
+import location_thamel from "../../assets/banner_files/Homepage_files/location_thamel.jpg";
+import location_thapathali from "../../assets/banner_files/Homepage_files/location_thapathali.jpg";
+import Slider from "react-slick";
 
 const Homepage = () => {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Number of slides visible
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // Mobile view
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="container">
       <div className="homepage">
@@ -267,6 +289,53 @@ const Homepage = () => {
           />
         </div>
         <TestimonialSlider />
+        <div className="location-container">
+          <p>Our Locations</p>
+          <Slider {...sliderSettings}>
+            <div>
+              <img
+                src={location_bhaktapur}
+                alt="Bhaktapur"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div>
+              <img
+                src={location_gyanmandala}
+                alt="Gyanmandala"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div>
+              <img
+                src={location_nepalartcouncil}
+                alt="Nepal Art Council"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div>
+              <img
+                src={location_ratnachowk}
+                alt="Ratna Chowk"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div>
+              <img
+                src={location_thamel}
+                alt="Thamel"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div>
+              <img
+                src={location_thapathali}
+                alt="Thapathali"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+          </Slider>
+        </div>
       </div>
     </div>
   );
