@@ -1,0 +1,16 @@
+<div className="contact">
+  <h2>Contact</h2>
+  <h4>Head Office:</h4>
+  <p>Tridevi Marg-26, Thamel, Kathmandu</p>
+  <p>+9771 4512536</p>
+
+  <h4>Administrative office:</h4>
+  <p>Purve Dhoka, Nagpokhari Lane,</p>
+  <p>Kathmandu</p>
+  <p>+9771 591903</p>
+  <p>info@himalayanjava.com</p>
+  <div className="icon">
+    <FaFacebook />
+    <FaInstagram />
+  </div>
+</div>

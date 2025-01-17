@@ -23,14 +23,16 @@ import location_ratnachowk from "../../assets/banner_files/Homepage_files/locati
 import location_thamel from "../../assets/banner_files/Homepage_files/location_thamel.jpg";
 import location_thapathali from "../../assets/banner_files/Homepage_files/location_thapathali.jpg";
 import Slider from "react-slick";
+import Footer from "../Footer/Footer";
 
 const Homepage = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Number of slides visible
+    slidesToShow: 5, // Number of slides visible
     slidesToScroll: 1,
+
     responsive: [
       {
         breakpoint: 768, // Mobile view
@@ -289,53 +291,83 @@ const Homepage = () => {
           />
         </div>
         <TestimonialSlider />
-        <div className="location-container">
-          <p>Our Locations</p>
+        <div
+          className="location-container"
+          style={{ position: "relative", top: "13vh" }}
+        >
+          <p
+            style={{
+              fontWeight: "800",
+              fontSize: "35px",
+              color: "black",
+            }}
+          >
+            Our Locations
+          </p>
           <Slider {...sliderSettings}>
-            <div>
+            <div className="slider-image-container ">
               <img
                 src={location_bhaktapur}
                 alt="Bhaktapur"
-                style={{ width: "100%", height: "auto" }}
+                className="slider-image"
               />
+              <p>Bhaktapur</p>
             </div>
-            <div>
+            <div className="slider-image-container">
               <img
                 src={location_gyanmandala}
                 alt="Gyanmandala"
-                style={{ width: "100%", height: "auto" }}
+                className="slider-image"
               />
+              <p>Gyanmandala</p>
             </div>
-            <div>
+            <div className="slider-image-container">
               <img
                 src={location_nepalartcouncil}
                 alt="Nepal Art Council"
-                style={{ width: "100%", height: "auto" }}
+                className="slider-image"
               />
+              <p>Nepal Art Council</p>
             </div>
-            <div>
+            <div className="slider-image-container">
               <img
                 src={location_ratnachowk}
                 alt="Ratna Chowk"
-                style={{ width: "100%", height: "auto" }}
+                className="slider-image"
               />
+              <p>Ratna Chowk</p>
             </div>
-            <div>
+            <div className="slider-image-container">
               <img
                 src={location_thamel}
                 alt="Thamel"
-                style={{ width: "100%", height: "auto" }}
+                className="slider-image"
               />
+              <p>Thamel</p>
             </div>
-            <div>
+            <div className="slider-image-container">
               <img
                 src={location_thapathali}
                 alt="Thapathali"
-                style={{ width: "100%", height: "auto" }}
+                className="slider-image"
               />
+              <p>Thapathali</p>
             </div>
           </Slider>
+          <button
+            className="view-button"
+            style={{
+              height: "60px",
+              width: "150px",
+              fontSize: "21px",
+              fontWeight: "600",
+              marginBottom: "3%",
+            }}
+          >
+            View All{" "}
+          </button>
         </div>
+        <Footer />
       </div>
     </div>
   );

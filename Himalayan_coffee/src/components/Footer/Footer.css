@@ -1,0 +1,121 @@
+.footer-container {
+  background-color: rgb(40, 39, 39); /* Sets the background to black */
+  color: white; /* Ensures the text is visible on the black background */
+  padding: 20px; /* Optional: Adds some spacing inside the footer */
+  text-align: center; /* Optional: Centers the text */
+  height: 90vh;
+  align-items: flex-start;
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between;
+}
+.footer-container img {
+  height: 160px;
+  width: 230px;
+  position: relative;
+  float: left;
+  top: 34%;
+  left: 10%;
+}
+.contact {
+  display: grid;
+  justify-content: center;
+  text-align: left;
+  margin-top: -20vh;
+  position: relative;
+  left: 25vh;
+  top: 34vh;
+}
+.contact h2 {
+  font-size: 35px;
+}
+.contact h4 {
+  font-size: 22px;
+  margin-top: -10px;
+}
+.contact p {
+  align-items: left;
+  font-size: 19px;
+  color: white;
+  margin-top: -1px;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.icon svg {
+  font-size: 55px;
+  width: 44px;
+}
+.icon svg:hover {
+  cursor: pointer;
+  color: rgb(131, 157, 214);
+  font-size: 65px;
+}
+.training {
+  position: relative;
+  text-align: left;
+  margin-left: 25vh;
+  align-items: center;
+  justify-content: center;
+  top: 14.5vh;
+}
+.training h2 {
+  font-size: 32px;
+}
+.training p {
+  font-size: 25px;
+  color: white;
+  font-size: 19px;
+}
+.download {
+  position: relative;
+  justify-content: right;
+  top: 14.5vh;
+  padding-right: 20px;
+  left: -17vh;
+}
+.download h2 {
+  font-size: 33px;
+}
+.download img {
+  height: 80px;
+  width: 260px;
+  margin-left: 4vh;
+  top: 4vh;
+}
+.download img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.terms {
+  position: absolute;
+  text-align: left;
+  margin-top: auto;
+  margin-right: auto;
+}
+.footer-text {
+  position: relative;
+  align-content: left;
+  float: left;
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  margin-top: 77vh;
+  max-width: 600px;
+  margin-left: 15vh;
+}
+.footer-text p {
+  font-size: 23px;
+  position: relative;
+  color: rgb(202, 72, 25);
+}
+.footer-text .right {
+    position: absolute;
+    align-items: right;
+    justify-content: right;
+    text-align: left;
+    float: right;
+    margin-left: 120vh;
+}
